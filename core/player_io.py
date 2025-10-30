@@ -1,6 +1,8 @@
 
 def ask_player_action() -> str:
-    pass
+    choice = input("Enter your choice: ")
+    options = ["S", "H"]
+    while choice not in options:
+        choice = input("Enter your choice: ")
+    return choice
 
-def run_full_game(deck: list[dict], player: dict, dealer: dict) -> None:
-    pass
